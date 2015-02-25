@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="entries_unit_preference">
+        <item>Metric (Kilometers)</item>
+        <item>Imperial (Miles)</item>
+   </string-array>
+    <string-array name="entryvalues_unit_preference" >
+        <item>Metric</item>
+        <item>Imperial</item>
+    </string-array>
+</resources>

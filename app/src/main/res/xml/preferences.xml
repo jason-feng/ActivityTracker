@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <PreferenceCategory
+        android:title="@string/account_preferences">
+
+        <PreferenceScreen
+            android:title="@string/user_profile_preferences"
+            android:summary="@string/summary_user_profile_preferences">
+
+            <intent android:action="android.intent.action.VIEW"
+                android:targetPackage="edu.dartmouth.cs.myrunsjf"
+                android:targetClass="edu.dartmouth.cs.myrunsjf.UserProfilePreferences" />
+
+        </PreferenceScreen>
+
+        <CheckBoxPreference
+            android:key="privacy_preference"
+            android:title="@string/privacy_setting"
+            android:summary="@string/summary_privacy_setting" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="@string/additional_preferences">
+
+        <EditTextPreference
+            android:key="comment_preference"
+            android:title="@string/title_comment_preference"
+            android:summary="@string/summary_comment_preference"
+            android:dialogTitle="@string/dialog_title_comment_preference" />
+
+        <ListPreference
+            android:key="unit_preference"
+            android:title="@string/title_unit_preferences"
+            android:summary="@string/summary_unit_preference"
+            android:entries="@array/entries_unit_preference"
+            android:entryValues="@array/entryvalues_unit_preference"
+            android:dialogTitle="@string/dialog_title_unit_preference" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="@string/misc_preferences">
+
+        <PreferenceScreen
+            android:title="@string/homepage_preference"
+            android:summary="@string/summary_homepage_preference">
+
+            <intent android:action="android.intent.action.VIEW"
+                android:data="http://www.cs.dartmouth.edu/~campbell" />
+
+        </PreferenceScreen>
+
+    </PreferenceCategory>
+
+</PreferenceScreen>

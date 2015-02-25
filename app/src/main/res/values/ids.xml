@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="hint_comment" type="id">How did it go? Enter notes here.</item>
+</resources>

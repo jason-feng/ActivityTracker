@@ -1,0 +1,8 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="edu.dartmouth.cs.myrunsjf.DisplayEntryActivity">
+
+    <item android:id="@+id/delete_entry_button"
+        android:title="@string/delete_entry_button"
+        android:onClick="onDeleteClick"/>
+</menu>
